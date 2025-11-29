@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biodata Diri - Holilayani</title>
+    <style>
+      /* --- CSS: Bagian Styling/Tampilan --- */
+
+      /* Reset dasar agar tampilan rapi di semua browser */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f0f2f5; /* Warna latar belakang abu-abu muda */
+        color: #333;
+        line-height: 1.6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      /* Container utama (Kartu Putih) */
+      .container {
+        background-color: white;
+        width: 100%;
+        max-width: 800px;
+        border-radius: 15px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Bagian Header (Foto & Nama) */
+      .header {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid rgba(255, 255, 255, 0.5);
+        margin-bottom: 15px;
+      }
+
+      .header h1 {
+        font-size: 2rem;
+        margin-bottom: 5px;
+      }
+
+      .header p {
+        font-size: 1.1rem;
+        opacity: 0.9;
+      }
+
+      /* Bagian Isi Biodata */
+      .content {
+        padding: 30px;
+      }
+
+      .section-title {
+        color: #764ba2;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .bio-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 30px;
+      }
+
+      .bio-table td {
+        padding: 10px;
+        vertical-align: top;
+      }
+
+      .bio-table td:first-child {
+        font-weight: bold;
+        width: 180px;
+        color: #555;
+      }
+
+      .about-text {
+        text-align: justify;
+        margin-bottom: 30px;
+      }
+
+      /* Tombol Sosial Media */
+      .social-links {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 5px;
+        background-color: #333;
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+        transition: background 0.3s;
+        font-size: 0.9rem;
+      }
+
+      .btn:hover {
+        background-color: #764ba2;
+      }
+
+      /* Footer */
+      .footer {
+        background-color: #f9f9f9;
+        text-align: center;
+        padding: 15px;
+        font-size: 0.8rem;
+        color: #777;
+      }
+
+      /* Responsif untuk HP (Layar kecil) */
+      @media (max-width: 600px) {
+        .bio-table td {
+          display: block;
+          width: 100%;
+          padding-left: 0;
+        }
+        .bio-table td:first-child {
+          margin-bottom: -5px;
+          color: #764ba2;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="holila.jpg" alt="Foto Profil" class="profile-img" width="200px"/>
+        <h1>Holilayani</h1>
+        <p>Mahasiswa Teknologi Informasi</p>
+      </header>
+
+      <div class="content">
+        <h2 class="section-title">Tentang Saya</h2>
+        <p class="about-text">
+          Halo! Saya adalah seorang mahasiswa yang baru menempuh pendidikan di bidang Teknologi Informasi. Saat ini saya sedang belajar dasar-dasar pemrograman, logika algoritma, serta memahami bagaimana teknologi dapat digunakan untuk memecahkan berbagai masalah. Saya berkomitmen untuk terus belajar dan mengembangkan kemampuan saya di dunia IT.
+        </p>
+
+        <h2 class="section-title">Data Diri</h2>
+        <table class="bio-table">
+          <tr>
+            <td>Nama Lengkap</td>
+            <td>: Holilayani</td>
+          </tr>
+          <tr>
+            <td>Tempat, Tanggal Lahir</td>
+            <td>: Lampung Selatan, 11 Mei 2007</td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>: Perempuan</td>
+          </tr>
+          <tr>
+            <td>Alamat</td>
+            <td>: Pesawaran,Lampung</td>
+          </tr>
+          <tr>
+            <td>Email</td>
+            <td>: holilayani5@email.com</td>
+          </tr>
+          <tr>
+            <td>Hobi</td>
+            <td>: Menonton</td>
+          </tr>
+        </table>
+
+       
+      </div>
+
+     
+  </body>
+</html>
